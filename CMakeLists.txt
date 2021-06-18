@@ -6,14 +6,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 #set(CMAKE_VERBOSE_MAKEFILE ON)
 
 include_directories(.)
-include_directories(test)
+include_directories(cpp_example)
 
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/target/debug/)
 
 
-add_executable(test
+add_executable(cpp_example
         bindings.h
-        test/main.cpp
+        cpp_example/main.cpp
 )
 #target_link_directories(mapfmclient_bindings PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/target/debug/)
-target_link_libraries(test mapfmclient_bindings)
+target_link_libraries(cpp_example mapfmclient_bindings)
