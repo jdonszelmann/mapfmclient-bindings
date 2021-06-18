@@ -3,6 +3,7 @@ use std::ops;
 use serde::{Serialize, Deserialize};
 
 #[derive(Deserialize, Serialize, Debug, PartialEq, Eq, Hash, Copy, Clone)]
+#[repr(C)]
 pub struct Coordinate {
     pub x: i64,
     pub y: i64,

@@ -4,6 +4,7 @@ use std::ops;
 use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Serialize, Copy, Clone, Debug, Eq, PartialEq, Hash)]
+#[repr(C)]
 pub struct MarkedCoordinate {
     #[serde(flatten)]
     coord: Coordinate,
