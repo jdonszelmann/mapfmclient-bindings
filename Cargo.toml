@@ -9,7 +9,7 @@ build = "src/build.rs"
 crate-type = ["cdylib", "rlib"]
 
 [features]
-default = ["cbindgen-on"]
+#default = ["cbindgen-on"]
 cbindgen-on = []
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

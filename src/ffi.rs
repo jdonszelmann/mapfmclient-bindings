@@ -1,3 +1,5 @@
+#![cfg(feature = "cbindgen-on")]
+
 use crate::{MapfBenchmarker, BenchmarkDescriptor, Problem, Coordinate, MarkedCoordinate};
 use crate::solution::Solution;
 use std::ffi::CStr;
@@ -36,6 +38,7 @@ unsafe fn get_str<'a>(inp: *const c_char) -> Option<&'a str> {
     }
 }
 
+#[cfg(feature = "cbindgen-on")]
 unsafe fn create_benchmarker_helper(
     token: *const c_char,
     benchmark: BenchmarkDescriptor,

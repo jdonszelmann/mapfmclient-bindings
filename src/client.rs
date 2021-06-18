@@ -9,6 +9,7 @@ use crate::grid::Grid;
 use reqwest::Url;
 use thiserror::Error;
 use serde::{Serialize, Deserialize};
+#[cfg(feature = "cbindgen-on")]
 use crate::ffi::CallBack;
 
 #[derive(Debug, Error)]
